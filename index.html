@@ -6,16 +6,61 @@
     <title>Profile</title>
 </head>
 <body>
-    <header class="header">
-        <img src="#/profile-menu.svg" alt="Profile simbol">
-        <h1 class="title-larger">
-            Hello, username
+    <section class="hero">
+        <div class="hero__container">
+            <h1>Welcome to Tildo</h1>
+            <p class="text-large">A simple way to be organized.</p>
+            <p class="text">click below and know more about it.</p>
+            <button>
+                Click for more
+            </button>
+        </div>
+    </section>
+    <section class="sign-in">
+        <img src="#tildo-brand" alt="tildo brand">
+        <h1 class="title">
+            Sign-in
         </h1>
-        <a href="sign-in.html">
-            Logout
-        </a>
-    </header>
+        <form class="sign-in__sign-form">
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+        </form>
+        <p class="error-messsage">
+            no user named 'brunoraniere' registed
+        </p>
+        <button class="sign-in__send-button">
+            Send
+        </button>
+        <a href="#/sign-un">Sign-up</a>
+    </section>
+    <section class="sign-up">
+        <img src="#tildo-brand" alt="tildo brand">
+        <h1 class="title">
+            Sign-up
+        </h1>
+        <form class="sign-up__sign-form">
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+            <input type="password" placeholder="password">
+        </form>
+        <p class="error-messsage">
+            no user named 'brunoraniere' registed
+        </p>
+        <button class="sign-up__send-button">
+            Send
+        </button>
+        <a href="#/sign-in">Sign-in</a>
+    </section>
     <section class="main-section">
+        <header class="header">
+            <img src="#/profile-menu.svg" alt="Profile simbol">
+            <h1 class="title-larger">
+                Hello, username
+            </h1>
+            <a href="sign-in.html">
+                Logout
+            </a>
+        </header>
         <h2 class="title">
             How can we help you?
         </h2>
