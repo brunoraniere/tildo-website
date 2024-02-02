@@ -1,0 +1,47 @@
+@use 'variables';
+
+.sign {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+
+        .button--sign {
+            width: 100%;
+            max-width: 170px;
+            padding: 8px;
+            margin: 28px 0 20px;
+            font-size: 14px;
+        }
+
+        form {
+            margin-top: 28px;
+            display: block;
+        }
+
+        input {
+            display: block;
+            padding: 5px;
+            margin-bottom: 12px;
+            max-width: 200px;
+            width: 100%;
+            text-align: center;
+            color: variables.$mainTextColor;
+            background-color: variables.$backgroundColor;
+            letter-spacing: 1px;
+            border-bottom: solid 1px variables.$mainTextColor;
+
+            &::placeholder {
+                color: variables.$mainTextColor;
+            }
+        }
+    }
+
+    .error-message {
+        margin-top: 12px;
+        color: #ff4d4d;
+        color: transparent;
+    }
+}

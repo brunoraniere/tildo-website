@@ -16,10 +16,10 @@
                 Tildo
             </h1>
             <div class="hero__header__buttons">
-                <button class="button--header">
+                <button type="button" class="button--header">
                     Sign-in
                 </button>
-                <button class="button--header">
+                <button type="button" class="button--header">
                     Sign-up
                 </button>
             </div>
@@ -28,66 +28,66 @@
             <div class="hero__container__content">
                 <h1 class="title">Welcome to Tildo</h1>
                 <p class="text--large">A simple way to be organized. Click below and know more about it.</p>
-                <button class="button--main">
+                <button type="button" class="button--main">
                     Click for more
                 </button>
             </div>
         </div>
     </section>
-    <section class="sign-in">
-        <img src="#tildo-brand" alt="tildo brand">
-        <h1 class="title">
-            Sign-in
-        </h1>
-        <form class="sign-in__sign-form">
-            <input type="text" placeholder="username">
-            <input type="password" placeholder="password">
-        </form>
-        <p class="error-messsage">
-            no user named 'brunoraniere' registed
-        </p>
-        <button class="sign-in__send-button">
-            Send
-        </button>
-        <a href="#/sign-un">Sign-up</a>
+    <section class="sign-in sign">
+        <div class="sign__container">
+            <h1 class="title--large">
+                Sign-in
+            </h1>
+            <form class="sign-in__sign-form">
+                <input maxlength="25" type="text" placeholder="username">
+                <input maxlength="12" type="password" placeholder="password">
+            </form>
+            <button type="button" class="button--main button--sign sign-in__send-button">
+                Send
+            </button>
+            <a href="#/sign-un">Sign-up</a>
+            <p class="error-message">
+                no user 'brunoraniere' registed
+            </p>
+        </div>
     </section>
-    <section class="sign-up">
-        <img src="#tildo-brand" alt="tildo brand">
-        <h1 class="title">
-            Sign-up
-        </h1>
-        <form class="sign-up__sign-form">
-            <input type="text" placeholder="username">
-            <input type="password" placeholder="password">
-            <input type="password" placeholder="password">
-        </form>
-        <p class="error-message">
-            no user named 'brunoraniere' registed
-        </p>
-        <button class="sign-up__send-button">
-            Send
-        </button>
-        <a href="#/sign-in">Sign-in</a>
+    <section class="sign-up sign">
+        <div class="sign__container">
+            <h1 class="title">
+                Sign-up
+            </h1>
+            <form class="sign-up__sign-form">
+                <input maxlength="25" type="text" placeholder="username">
+                <input maxlength="12" type="password" placeholder="password">
+                <input maxlength="12" type="password" placeholder="confirm password">
+            </form>
+            <button type="button" class="button--main button--sign sign-up__send-button">
+                Send
+            </button>
+            <a href="#/sign-in">Sign-in</a>
+            <p class="error-message">
+                no user 'brunoraniere' registed
+            </p>
+        </div>
     </section>
     <section class="main">
-        <header class="header">
-            <img src="#/profile-menu.svg" alt="Profile simbol">
-            <h1 class="title-larger">
+        <header class="main__header">
+            <h1 class="title--large">
                 Hello, username
             </h1>
             <a href="sign-in.html">
                 Logout
             </a>
         </header>
-        <h2 class="title">
-            How can we help you?
-        </h2>
         <div class="choices">
             <div class="choices__item">
-                <img src="#arrow-simbol.svg" alt="Arrow">
-                <h3 class="title-small">
-                    Schedule
-                </h3>
+                <div class="choices__item__header">
+                    <img src="#arrow-simbol.svg" alt="Arrow">
+                    <h2 class="title--small">
+                        Schedule
+                    </h3>
+                </div>
                 <div class="choices__item__container">
                     <div class="telegram-register">
                         <div class="telegram-register__agent">
@@ -97,7 +97,7 @@
                             <p class="text">
                                 Build your own schedule, get notifications at the time and keep a positive hours bank.
                             </p>
-                            <button>
+                            <button type="button">
                                 Start now with telegram
                             </button>
                         </div>
@@ -106,7 +106,7 @@
                             <h4 class="title-super-small">COD428375</h4>
                             <img src="#copy-simbol.svg" alt="Copy simbol">
                             <p class="text-large">Copy the code below and send for Pérola on Telegram</p>
-                            <button>
+                            <button type="button">
                                 Click to start
                             </button>
                         </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="choices__item">
                 <img src="#arrow-simbol.svg" alt="Arrow">
-                <h3 class="title-small">
+                <h2 class="title-small">
                     Finances
                 </h3>
                 <div class="choices__item__container">
@@ -127,7 +127,7 @@
                             <p class="text">
                                 Organize your finances on a simple, easy, fun way with an agent.
                             </p>
-                            <button>
+                            <button type="button">
                                 Start now with Telegram
                             </button>
                         </div>
@@ -136,7 +136,7 @@
                             <h4 class="title-super-small">COD428375</h4>
                             <img src="#copy-simbol.svg" alt="Copy simbol">
                             <p class="text-large">Copy the code below and send for Lex on Telegram</p>
-                            <button>
+                            <button type="button">
                                 Click to start
                             </button>
                         </div>
