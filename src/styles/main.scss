@@ -1,3 +1,115 @@
-* {
-    
+@use 'reset';
+@use 'variables';
+@use 'hero';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+body {
+    background-color: variables.$backgroundColor;
+}
+
+section {
+    padding: 5.6vw;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$mainTextColor;
+}
+
+@mixin title($fontSize: 36px) {
+    @include text($fontSize);
+    color: variables.$secondaryTextColor;
+}
+
+.button--header {
+    padding: 8px 16px;
+    margin-left: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    border: 1px solid variables.$mainTextColor;
+    color: variables.$secondaryTextColor;
+    background-color: #04071444;
+    vertical-align: middle;
+    transition: all .2s ease 0s;
+
+    &:hover { 
+        // background-color: #f9f9f9;
+        // color: variables.$backgroundColor;
+        object-fit: contain;
+        background-image: url(../../dist/images/button-background.jpg);
+        border: 1px solid transparent;
+    }
+}
+
+.button--main {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: variables.$backgroundColor;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    border: 1px solid variables.$mainTextColor;
+    color: variables.$secondaryTextColor;
+    background-color: #04071444;
+    vertical-align: middle;
+    transition: all .2s ease 0s;
+
+    &:hover {
+        // background-color: variables.$tildoPrimaryColor;
+        // color: variables.$secondaryTextColor;
+        object-fit: fill;
+        background-image: url(../../dist/images/button-background.jpg);
+        border: 1px solid transparent;
+    }
+}
+
+.tildo-logo {
+    @include title(48px);
+    display: inline-block;
+    line-height: 64px;
+    font-family: 'DM Mono', monospace;
+    color: variables.$secondaryTextColor;
+    // background: linear-gradient(to right, variables.$tildoSecondaryColor, variables.$tildoPrimaryColor);
+    // -webkit-background-clip: text;
+    // color: transparent;
+}
+
+.text--large {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--large {
+    @include title(40px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(32px);
 }

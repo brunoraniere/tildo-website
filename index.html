@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Tildo</title>
 </head>
 <body>
     <section class="hero">
+        <div class="hero__header">
+            <h1 class="tildo-logo">
+                Tildo
+            </h1>
+            <div class="hero__header__buttons">
+                <button class="button--header">
+                    Sign-in
+                </button>
+                <button class="button--header">
+                    Sign-up
+                </button>
+            </div>
+        </div>
         <div class="hero__container">
-            <h1>Welcome to Tildo</h1>
-            <p class="text-large">A simple way to be organized.</p>
-            <p class="text">click below and know more about it.</p>
-            <button>
-                Click for more
-            </button>
+            <div class="hero__container__content">
+                <h1 class="title">Welcome to Tildo</h1>
+                <p class="text--large">A simple way to be organized. Click below and know more about it.</p>
+                <button class="button--main">
+                    Click for more
+                </button>
+            </div>
         </div>
     </section>
     <section class="sign-in">
@@ -43,7 +61,7 @@
             <input type="password" placeholder="password">
             <input type="password" placeholder="password">
         </form>
-        <p class="error-messsage">
+        <p class="error-message">
             no user named 'brunoraniere' registed
         </p>
         <button class="sign-up__send-button">
@@ -51,7 +69,7 @@
         </button>
         <a href="#/sign-in">Sign-in</a>
     </section>
-    <section class="main-section">
+    <section class="main">
         <header class="header">
             <img src="#/profile-menu.svg" alt="Profile simbol">
             <h1 class="title-larger">
