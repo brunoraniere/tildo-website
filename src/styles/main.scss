@@ -32,11 +32,15 @@ body {
 }
 
 section {
-    padding: 3.6vw;
+    padding: 3.6vw 2.8vw;
 }
 
 a {
     @include text();
+
+    &:hover {
+        transform: scale(1.03)
+    }
 }
 
 .tildo-logo {
@@ -45,9 +49,6 @@ a {
     line-height: 64px;
     font-family: 'DM Mono', monospace;
     color: variables.$secondaryTextColor;
-    // background: linear-gradient(to right, variables.$tildoSecondaryColor, variables.$tildoPrimaryColor);
-    // -webkit-background-clip: text;
-    // color: transparent;
 }
 
 .button--header {
@@ -105,7 +106,7 @@ a {
 }
 
 .text--small {
-    @include text(12px);
+    @include text(14px);
 }
 
 .title--large {
@@ -117,5 +118,5 @@ a {
 }
 
 .title--small {
-    @include title(32px);
+    @include title(26px);
 }

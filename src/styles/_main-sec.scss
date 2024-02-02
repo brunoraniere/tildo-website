@@ -1,9 +1,68 @@
 @use 'variables';
 
 .main {
+    max-width: 1024px;
+    margin: 0 auto;
+    
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .button--container {
+        font-size: 14px;
+    }
+
+    .choices {
+        &__item {
+            margin-bottom: 24px;
+
+            &__header {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 10px 16px;
+                border: 1px solid variables.$mainTextColor;
+                border-radius: 4px;
+                transition: all .3s ease 0s;
+
+                &:hover { 
+                    object-fit: contain;
+                    background-image: url(../../dist/images/button-background.jpg);
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                }
+
+                .title--small {
+                    margin-left: 5px;
+                }
+            }
+
+            &__container {
+                padding: 28px 16px;
+
+                .telegram-register {
+                    padding: 10px;
+                    margin: 0 auto;
+                    width: 320px;
+                    // background-color: #060b1d;
+                    text-align: center;
+
+                    &__agent {
+                        &__profile {
+                            border-radius: 4px;
+                            margin: 18px 0;
+                            max-width: 140px;
+                        }
+
+                        .text--small {
+                            margin: 28px 0 40px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

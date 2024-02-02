@@ -1,13 +1,15 @@
 @use 'variables';
 
 .hero {
-    padding-top: 2vw;
+    padding: 2vw 4.2vw;
     background-image: url(../../dist/images/hero-background.jpg);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
     
     &__header {
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,6 +17,8 @@
 
     &__container {
         display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
 
         &__content {
             padding: 32px 0 64px;
