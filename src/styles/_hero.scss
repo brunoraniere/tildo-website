@@ -1,11 +1,16 @@
 @use 'variables';
 
 .hero {
-    padding: 2vw 5.6vw;
-    background-image: url(../../dist/images/hero-background.jpg);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
+    padding: 0;
+    
+    .container {
+        max-height: 800px;
+        padding: 2vw 5.6vw;
+        background-image: url(../../dist/images/hero-background.jpg);
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
     
     &__header {
         margin: 0 auto;
