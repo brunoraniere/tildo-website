@@ -3,6 +3,7 @@
 @use 'hero';
 @use 'sign';
 @use 'main-sec';
+@use 'info';
 
 @font-face {
     font-family: Avenir;
@@ -32,7 +33,7 @@ body {
 }
 
 section {
-    padding: 3.6vw 2.8vw;
+    padding: 5.6vw 10vw;
 }
 
 a {

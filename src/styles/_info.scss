@@ -1,0 +1,25 @@
+@use 'variables';
+
+.info {
+    &__slide {
+        display: flex;
+        justify-content: space-between;
+
+        &__container {
+            width: 49%;
+            
+            .title {
+                padding-bottom: 16px;
+            }
+    
+            .text {
+                padding: 8px 0;
+            }
+    
+            img {
+                margin: auto 40px;
+                width: 80px;
+            }
+        }
+    }
+}
