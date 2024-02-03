@@ -4,6 +4,7 @@
 @use 'sign';
 @use 'main-sec';
 @use 'info';
+@use 'footer';
 
 @font-face {
     font-family: Avenir;
@@ -34,7 +35,6 @@ body {
 
 section {
     padding: 5.6vw 10vw;
-    min-height: 100vh;
 }
 
 a {
