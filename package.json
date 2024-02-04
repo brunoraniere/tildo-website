@@ -1,7 +1,6 @@
 {
   "name": "tildo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "gulp watch",
@@ -16,5 +15,6 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.70.0"
-  }
+  },
+  "description": ""
 }

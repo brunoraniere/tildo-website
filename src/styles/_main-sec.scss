@@ -14,7 +14,7 @@
 
     .choices {
         &__item {
-            margin-bottom: 24px;
+            // margin-bottom: 24px;
 
             &__header {
                 display: flex;
@@ -38,13 +38,12 @@
             }
 
             &__container {
-                padding: 28px 16px;
+                padding: 10px;
 
                 .telegram-register {
-                    padding: 10px;
-                    margin: 0 auto;
-                    width: 320px;
-                    // background-color: #060b1d;
+                    display: none; // ---------------------------------------------------------------
+                    margin: 5px auto;
+                    max-width: 320px;
                     text-align: center;
 
                     .text--small {
@@ -73,6 +72,42 @@
 
                             &:hover {
                                 cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .schedule {
+                    &__week-options {
+                        .title--mini {
+                            margin-bottom: 5px;
+                        }
+
+                        &__form {
+                            display: flex;
+
+                            &__week-day {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 10px;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+
+                                .checkbox {
+                                    display: block;
+                                    padding: 5px;
+                                    margin-right: 3px;
+                                    margin-bottom: 2px;
+                                    border: 1px solid variables.$mainTextColor;
+                                    border-radius: 2px;
+
+                                    &--checked {
+                                        background-color: variables.$mainTextColor;
+                                        // background-image: url(../../dist/images/button-background.jpg);
+                                    }
+                                }
                             }
                         }
                     }

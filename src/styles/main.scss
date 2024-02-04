@@ -126,3 +126,7 @@ a {
 .title--small {
     @include title(26px);
 }
+
+.title--mini {
+    @include title(20px);
+}
