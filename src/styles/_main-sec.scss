@@ -38,7 +38,7 @@
             }
 
             &__container {
-                padding: 10px;
+                padding: 12px;
 
                 .telegram-register {
                     display: none; // ---------------------------------------------------------------
@@ -78,10 +78,12 @@
                 }
 
                 .schedule {
+                    .text--small{
+                        margin-bottom: 16px;
+                    }
+
                     &__week-options {
-                        .title--mini {
-                            margin-bottom: 5px;
-                        }
+                        padding: 16px 0;
 
                         &__form {
                             display: flex;
@@ -108,6 +110,43 @@
                                         // background-image: url(../../dist/images/button-background.jpg);
                                     }
                                 }
+                            }
+                        }
+                    }
+
+                    &__activities {
+                        padding: 16px 0;
+
+                        &__buttons {
+                            max-width: 200px;
+
+                            &__item {
+                                font-weight: bold;
+                                display: flex;
+                                align-items: center;
+                                padding: 3px 8px;
+                                border-radius: 4px;
+
+                                img {
+                                    width: 16px;
+                                    margin-bottom: 2px;
+                                    margin-right: 3px;
+                                }
+
+                                .title--mini {
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .add-button {
+                                border: 1px solid variables.$mainTextColor;
+                                text-transform: none;
+                                letter-spacing: 0;
                             }
                         }
                     }
