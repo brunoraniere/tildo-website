@@ -45,6 +45,10 @@ a {
     }
 }
 
+.d-flex {
+    display: flex
+}
+
 .tildo-logo {
     @include title(48px);
     display: inline-block;

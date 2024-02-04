@@ -47,15 +47,33 @@
                     // background-color: #060b1d;
                     text-align: center;
 
-                    &__agent {
-                        &__profile {
-                            border-radius: 4px;
-                            margin: 18px 0;
-                            max-width: 140px;
+                    .text--small {
+                        margin: 28px 0 40px;
+                    }
+
+                    .profile {
+                        border-radius: 4px;
+                        margin: 18px 0;
+                        max-width: 140px;
+                    }
+
+                    .d-flex {
+                        justify-content: center;
+                        align-items: center;
+
+                        .code {
+                            font-size: 24px;
+                            letter-spacing: 1px;
                         }
 
-                        .text--small {
-                            margin: 28px 0 40px;
+                        .copy-icon {
+                            margin-left: 8px;
+                            height: 24px;
+                            width: 24px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
