@@ -99,11 +99,11 @@
 
                                 .checkbox {
                                     display: block;
-                                    padding: 5px;
+                                    padding: 4px;
                                     margin-right: 3px;
                                     margin-bottom: 2px;
                                     border: 1px solid variables.$mainTextColor;
-                                    border-radius: 2px;
+                                    border-radius: 1px;
 
                                     &--checked {
                                         background-color: variables.$mainTextColor;
@@ -118,35 +118,101 @@
                         padding: 16px 0;
 
                         &__buttons {
-                            max-width: 200px;
+                            display: grid;
+                            grid-template-columns: repeat(5, 19.2%);
+                            column-gap: 1%;
+
+                            .activities {
+                                &--input {
+                                    display: block;
+                                    line-height: 14px;
+                                    font-size: 14px;
+                                    height: 18px;
+                                    width: 100%;
+                                    background-color: variables.$backgroundColor;
+                                    text-transform: uppercase;
+                                }
+
+                                &--color {
+                                    padding: 4px;
+                                    border: 1px solid variables.$mainTextColor;
+                                    border-radius: 1px;
+                                    margin-bottom: 3px;
+                                    margin-right: 5px;
+
+                                    &--free-time {
+                                        background-color: #20bf6b;
+                                    }
+
+                                    &--other-activity {
+                                        background-color: #040714;
+                                    }
+
+                                    &--yellow {
+                                        background-color: #f7b731;
+                                    }
+
+                                    &--aqua {
+                                        background-color: #0fb9b1;
+                                    }
+
+                                    &--orange {
+                                        background-color: #fa8231;
+                                    }
+
+                                    &--red {
+                                        background-color: #eb3b5a;
+                                    }
+
+                                    &--dark-blue {
+                                        background-color: #3867d6;
+                                    }
+
+                                    &--light-blue {
+                                        background-color: #2d98da;
+                                    }
+                                    
+                                    &--purple {
+                                        background-color: #8854d0;
+                                    }
+
+                                    &--dark-gray {
+                                        background-color: #4b6584;
+                                    }
+                                }
+
+                                &--button {
+                                    padding: 5px 8px 3px;
+                                    border-bottom: 1px solid variables.$mainTextColor;
+                                    border-radius: 0px;
+                                }
+
+                                &--default {
+                                    color: variables.$mainTextColor;
+                                }
+
+                                &--is-selected {
+                                    border: 1px solid variables.$mainTextColor;
+                                    border-radius: 3px;
+                                }
+                            }
 
                             &__item {
-                                font-weight: bold;
                                 display: flex;
                                 align-items: center;
-                                padding: 3px 8px;
+                                padding: 4px 8px;
+                                margin: 10px 0;
                                 border-radius: 4px;
-
-                                img {
-                                    width: 16px;
-                                    margin-bottom: 2px;
-                                    margin-right: 3px;
-                                }
-
-                                .title--mini {
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                }
 
                                 &:hover {
                                     cursor: pointer;
                                 }
                             }
-
-                            .add-button {
-                                border: 1px solid variables.$mainTextColor;
-                                text-transform: none;
-                                letter-spacing: 0;
+    
+                            img {
+                                width: 16px;
+                                margin-bottom: 2px;
+                                margin-right: 3px;
                             }
                         }
                     }

@@ -172,12 +172,54 @@
                             </form>
                         </div>
                         <div class="schedule__activities">
-                            <h3 class="title--mini">Activities</h3>
-                            <p class="text--small">Add until 12 activities, click on it and choose the time on your schedule.</p>
+                            <h3 class="title--mini">
+                                Activities
+                            </h3>
+                            <p class="text--small">
+                                Add until 10 activities, click on the activity and click on the schedule table time you want.
+                                <br>"Free time" and "Other activity" can't change and don't matter for hours balance.
+                                <br>Don't forget to save changes.
+                            </p>
                             <div class="schedule__activities__buttons">
-                                <div class="schedule__activities__buttons__item add-button button--main">
-                                    <img src="dist/images/plus.svg" alt="plus simbol">
-                                    <span class="title--mini">Add activity</span>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--free-time"></span>
+                                    <input class="activities--input activities--default" value="Free time" type="text" maxlength="20" readonly>
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button activities--is-selected">
+                                    <span class="activities--color activities--color--other-activity"></span>
+                                    <input class="activities--input activities--default" value="OTHER ACTIVITY" type="text" maxlength="20" readonly>
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--red"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--aqua"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--yellow"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--dark-blue"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--orange"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--light-blue"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--purple"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
+                                </div>
+                                <div class="schedule__activities__buttons__item activities--button">
+                                    <span class="activities--color activities--color--dark-gray"></span>
+                                    <input class="activities--input activities--default" value="" type="text" maxlength="20">
                                 </div>
                             </div>
                         </div>
