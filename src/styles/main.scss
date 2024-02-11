@@ -130,3 +130,7 @@ a {
 .title--mini {
     @include title(20px);
 }
+
+.title--schedule-table {
+    @include title(16px);
+}

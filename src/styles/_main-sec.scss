@@ -25,12 +25,12 @@
                 border-radius: 4px;
                 transition: all .3s ease 0s;
 
-                &:hover { 
-                    object-fit: contain;
-                    background-image: url(../../dist/images/button-background.jpg);
-                    border: 1px solid transparent;
-                    cursor: pointer;
-                }
+                // &:hover { 
+                //     object-fit: contain;
+                //     background-image: url(../../dist/images/button-background.jpg);
+                //     border: 1px solid transparent;
+                //     cursor: pointer;
+                // }
 
                 .title--small {
                     margin-left: 5px;
@@ -41,7 +41,7 @@
                 padding: 12px;
 
                 .telegram-register {
-                    display: none; // ---------------------------------------------------------------
+                    // display: none; // ---------------------------------------------------------------
                     margin: 5px auto;
                     max-width: 320px;
                     text-align: center;
@@ -78,8 +78,17 @@
                 }
 
                 .schedule {
+                    // display: none; // ---------------------------------------------------------------------
+
                     .text--small{
                         margin-bottom: 16px;
+                    }
+
+                    .hours-balance {
+                        &__hours {
+                            font-weight: bold;
+                            color: #eb3b5a;
+                        }
                     }
 
                     &__week-options {
@@ -118,9 +127,8 @@
                         padding: 16px 0;
 
                         &__buttons {
-                            display: grid;
-                            grid-template-columns: repeat(5, 19.2%);
-                            column-gap: 1%;
+                            display: flex;
+                            flex-wrap: wrap;
 
                             .activities {
                                 &--input {
@@ -183,6 +191,8 @@
 
                                 &--button {
                                     padding: 5px 8px 3px;
+                                    margin-right: 8px;
+                                    min-width: 140px;
                                     border-bottom: 1px solid variables.$mainTextColor;
                                     border-radius: 0px;
                                 }
@@ -219,6 +229,73 @@
 
                     &__table {
                         padding: 16px 0;
+                        
+                        .title--mini {
+                            margin-bottom: 10px;
+                        }
+
+                        &__container {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+
+                        &__week-days {
+                            width: 100px;
+                            margin-right: 20px;
+                            margin-bottom: 20px;
+
+                            &__row {
+                                display: flex;
+                                min-width: 100%;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                                
+                                .table__hours {
+                                    width: 35%;
+                                    text-align: center;
+                                    line-height: 14px;
+                                    padding: 3px 4px 1px 0;
+                                    margin-bottom: 0;
+                                    border-right: 1px solid variables.$mainTextColor;
+                                }
+
+                                .table__colors {
+                                    width: 65%;
+                                    text-align: center;
+                                    padding: 2px 2px 1px;
+                                    margin: 0 0 4px 5px;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    color: variables.$secondaryTextColor;
+                                    border: 1px solid transparent;
+                                    border-radius: 3px;
+                                    text-transform: uppercase;
+
+                                    &--green {
+                                        background-color: #20bf6b;
+                                    }
+
+                                    &--gray {
+                                        border: 1px solid variables.$mainTextColor;
+                                    }
+                                }
+                            }
+
+                            .title--schedule-table {
+                                margin-bottom: 4px;
+                            }
+                        }
+                    }
+                }
+
+                .finance {
+                    .finance-balance {
+                        &__value {
+                            font-weight: bold;
+                            color: #eb3b5a;
+                        }
                     }
                 }
             }

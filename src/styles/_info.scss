@@ -1,7 +1,7 @@
 @use 'variables';
 
 .info {
-    display: none; // ------------------------------------------------------------------------------------
+    // display: none; // ------------------------------------------------------------------------------------
     .title--large {
         margin-bottom: 40px;
         text-align: center;
@@ -9,10 +9,13 @@
 
     &__slide {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
 
         &__container {
-            width: 49%;
+            width: 48%;
+            margin: 0 auto 20px;
+            min-width: 300px;
 
             .title {
                 text-align: center;
