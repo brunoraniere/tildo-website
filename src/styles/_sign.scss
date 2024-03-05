@@ -47,6 +47,10 @@
             &::placeholder {
                 color: variables.$mainTextColor;
             }
+
+            &[type="text"] {
+                text-transform: lowercase;
+            }
         }
     }
 
