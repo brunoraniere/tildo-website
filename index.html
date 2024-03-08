@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Tildo</title>
 </head>
 <body>
@@ -34,54 +35,56 @@
         </div>
     </section>
     <section class="sign">
-        <div class="sign-in">
-            <div class="sign__container">
-                <h1 class="title--large">
-                    Sign-in
-                </h1>
-                <form class="sign-in__sign-form">
-                    <input maxlength="20" type="text" placeholder="username">
-                    <input maxlength="12" type="password" placeholder="password">
-                </form>
-                <button type="button" class="button--main button--sign sign-in__send-button">
-                    Send
-                </button>
-                <a href="#/sign-un">Sign-up</a>
-                <p class="error-message">
-                    no user 'brunoraniere' registed
-                </p>
+        <div class="sign__slide">
+            <div class="sign-in">
+                <div class="sign__container">
+                    <h1 class="title--large">
+                        Sign-in
+                    </h1>
+                    <form class="sign-in__sign-form">
+                        <input class="input--username" maxlength="20" type="text" placeholder="username">
+                        <input class="input--password" maxlength="12" type="password" placeholder="password">
+                    </form>
+                    <button type="button" class="button--main button--sign sign-in__send-button">
+                        Send
+                    </button>
+                    <a class="sign__slide--swipe" href="#/sign-un">Sign-up</a>
+                    <p class="error-message">
+                        no user 'brunoraniere' registed
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="warning">
-            <div class="sign__container">
-                <h1 class="title--large">
-                    Warning
-                </h1>
-                <p class="text">
-                    We are on the beta development, we don't use any criptography system for password. So, we recommend to use a symbolic password to sign-up.
-                </p>
-                <button type="button" class="button--main button--sign sign-in__send-button">
-                    Continue
-                </button>
+            <div class="warning">
+                <div class="sign__container">
+                    <h1 class="title--large">
+                        Warning
+                    </h1>
+                    <p class="text">
+                        We are on the beta development, we don't use any criptography system for password. So, we recommend to use a symbolic password to sign-up.
+                    </p>
+                    <button type="button" class="button--main button--sign  sign__slide--swipe">
+                        Continue
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="sign-up">
-            <div class="sign__container">
-                <h1 class="title">
-                    Sign-up
-                </h1>
-                <form class="sign-up__sign-form">
-                    <input maxlength="20" type="text" placeholder="username">
-                    <input maxlength="12" type="password" placeholder="password">
-                    <input maxlength="12" type="password" placeholder="confirm password">
-                </form>
-                <button type="button" class="button--main button--sign sign-up__send-button">
-                    Send
-                </button>
-                <a href="#/sign-in">Sign-in</a>
-                <p class="error-message">
-                    no user 'brunoraniere' registed
-                </p>
+            <div class="sign-up">
+                <div class="sign__container">
+                    <h1 class="title">
+                        Sign-up
+                    </h1>
+                    <form class="sign-up__sign-form">
+                        <input class="input--username" maxlength="20" type="text" placeholder="username">
+                        <input class="input--password" maxlength="12" type="password" placeholder="password">
+                        <input class="input--confirm-password" maxlength="12" type="password" placeholder="confirm password">
+                    </form>
+                    <button type="button" class="button--main button--sign sign-up__send-button">
+                        Send
+                    </button>
+                    <a class="sign__slide--swipe" href="#/sign-in">Sign-in</a>
+                    <p class="error-message">
+                        no user 'brunoraniere' registed
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -3052,6 +3055,7 @@
         </p>
     </section>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="dist/scripts/hero.js"></script>
     <script src="dist/scripts/sign.js"></script>
 </body>
